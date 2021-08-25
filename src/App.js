@@ -12,7 +12,6 @@ function App() {
   return (
     <Router history={browserHistory}>
       <Switch>
-        {/* <Route exact path="/login" component={Login} /> */}
         <Main>
           <Route exact path="/" component={Home} />
           <Routes />
