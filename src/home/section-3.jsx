@@ -1,17 +1,14 @@
+import { auto } from 'async';
 import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router-dom';
+import { Row, Col, Typography } from 'antd';
 
+const { Title } = Typography
 const Section3 = (props) => {
 
   return (
-    <section className="padd odd">
-    <div className="sup-head">
-      <span className="health"></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <section className="padd odd one">
+      <Title className="under">About Us</Title>
     <p>
       BWAAP aims to plant millions of trees through its Smart Agroforestry &amp; Agri-Plantation initiative benefiting Nature, Society &amp; Country to the greatest level.
       BWAAP desires to bring like-minded people who wish to spread Health, Wealth, Success, Spirituality &amp; Happiness to the complete Mankind to create a World of Well-Being.
