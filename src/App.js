@@ -3,7 +3,8 @@ import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import Main from './main';
-import Home from './home';
+// import Home from './home';
+import Web from './web';
 import Routes from './routes';
 
 const browserHistory = createBrowserHistory();
@@ -13,7 +14,7 @@ function App() {
     <Router history={browserHistory}>
       <Switch>
         <Main>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Web} />
           <Routes />
         </Main>
       </Switch>
