@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 // import {Row, Col, Typography  } from 'antd';
 
 import Banner from './banner';
+import Footer from './footer';
 
 
 // const { Title } = Typography;
@@ -10,6 +11,7 @@ import Banner from './banner';
 const Web = () => (
   <>
  <Banner />
+<Footer />
 
     </>
   
