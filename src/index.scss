@@ -3,6 +3,8 @@
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "./web/footerStyle.css";
+@import "./about/about.scss";
+
 
 $titleWhite : #ffffff;
 *,
@@ -96,8 +98,19 @@ body,
   }
 
   .ant-layout-footer {
-    background-color: #3A2471;
-    min-height      : 4em;
+    // background-color: #3A2471;
+    // min-height      : 4em;
+    padding: 0;
+  }
+
+  .copy-right{
+    padding: 1em;
+    background: #276226;
+    color: $titleWhite;
+    p{
+      margin: 0;
+      font-weight: 600;
+    }
   }
 }
 
@@ -249,6 +262,19 @@ body,
   // background: #eee;
 }
 
+// common
+
+.overlay {
+  background: #102806d9;
+  height    : 100%;
+  position  : absolute;
+  // z-index: 999;
+  opacity   : 1;
+  width     : 100%;
+}
+
+
+// Home Page
 .home-page {
   // background: #0d98ba;
   height               : 80vh;
@@ -259,14 +285,7 @@ body,
   background-color: #0d98ba;
   // background: URL("./assets/images/wave.webp");
 
-  .overlay {
-    background: #14311999;
-    height    : 80vh;
-    position  : absolute;
-    // z-index: 999;
-    opacity   : 1;
-    width     : 100%;
-  }
+
 
   .home-bg{
     background: url("./assets/images/wave.webp");
@@ -342,14 +361,7 @@ body,
   background-size: cover;
   position: relative;
 
-  .overlay {
-    background: #102806d9;
-    height    : 100%;
-    position  : absolute;
-    // z-index: 999;
-    opacity   : 1;
-    width     : 100%;
-  }
+
 
   .about-content{
     text-align: center;
@@ -380,9 +392,14 @@ body,
 }
 
 .strip-gc {
-  background: rgb(28, 128, 28);
-  padding   : 2em;
+  // background: rgb(28, 128, 28);
+  background:url("./assets/images/global-challenges.jpg");
   color: $titleWhite;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
   .gc-captions{
     padding:2em
@@ -412,12 +429,6 @@ body,
   background-position: bottom;
   position: relative;
 
-  .overlay {
-    background: #14311999;
-    position  : absolute;
-    width     : 100%;
-    height: 100%;
-  }
 
  .farmingprojects-captions{
    padding: 2em;
@@ -565,14 +576,6 @@ body,
   position: relative;
   color: #fff;
 
-  .overlay {
-    background: #10390bcc;
-    height    : 100%;
-    position  : absolute;
-    // z-index: 999;
-    opacity   : 1;
-    width     : 100%;
-  }
 
   h2, h3{
     font-weight: 700;

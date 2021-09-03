@@ -1,13 +1,12 @@
 // import { auto } from 'async';
 // import React, { useEffect, useState } from 'react';
 import React from "react";
-import { withRouter } from "react-router-dom";
-import { Row, Col, Typography } from "antd";
-import {  AimOutlined,  MailOutlined,  PhoneOutlined, DribbbleOutlined, LinkedinOutlined, InstagramOutlined, TwitterOutlined, FacebookOutlined, RightOutlined} from "@ant-design/icons";
+import { withRouter, Link } from "react-router-dom";
+import { Row, Col } from "antd";
+import {  MailOutlined,  PhoneOutlined, DribbbleOutlined, LinkedinOutlined, InstagramOutlined, TwitterOutlined, FacebookOutlined, RightOutlined} from "@ant-design/icons";
 
 import happinessIcon from "../assets/images/icons/happiness.png";
 
-const { Title } = Typography;
 
 const Footer = (props) => {
   return (
@@ -43,12 +42,12 @@ const Footer = (props) => {
         <Col span={6}>
             <h3>Explore</h3>
             <ul className="snip1275">    
-                <li> <RightOutlined /> <a href=""> About Us</a></li>
-                <li> <RightOutlined /><a>Business</a></li>
-                <li> <RightOutlined /><a>Farms</a> </li>
-                <li> <RightOutlined /><a> Projects</a></li>
-                <li> <RightOutlined /><a>Technology</a></li>
-                <li> <RightOutlined /><a>Projects</a></li>
+                <li> <RightOutlined /> <Link to="/"> About Us</Link></li>
+                <li> <RightOutlined /><Link to="/">Business</Link></li>
+                <li> <RightOutlined /><Link to="/">Farms</Link> </li>
+                <li> <RightOutlined /><Link to="/"> Projects</Link></li>
+                <li> <RightOutlined /><Link to="/">Technology</Link></li>
+                <li> <RightOutlined /><Link to="/">Projects</Link></li>
             </ul>
         </Col>
 
@@ -56,13 +55,18 @@ const Footer = (props) => {
             <div className="social-links">
             <h3>Touch with us</h3>
             <ul className="snip1275">
-                <li><a><FacebookOutlined /> Facebook</a></li>
-                <li><a><TwitterOutlined /> Twitter</a></li>
-                <li><a><InstagramOutlined /> Instagram </a></li>
-                <li><a><LinkedinOutlined /> Linkedin</a></li>
-                <li><a><DribbbleOutlined /> Dribble</a></li>
+                <li><Link to="/"><FacebookOutlined /> Facebook</Link></li>
+                <li><Link to="/"><TwitterOutlined /> Twitter</Link></li>
+                <li><Link to="/"><InstagramOutlined /> Instagram </Link></li>
+                <li><Link to="/"><LinkedinOutlined /> Linkedin</Link></li>
+                <li><Link to="/"><DribbbleOutlined /> Dribble</Link></li>
             </ul>
             </div>
+        </Col>
+      </Row>
+      <Row className="copy-right">
+        <Col span={24} align="center">
+          <p>All Rights Reserved @BWAAP 2021</p>
         </Col>
       </Row>
     </>

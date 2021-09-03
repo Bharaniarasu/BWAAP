@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import {
   Layout, Menu,
 } from 'antd';
+import {
+  Link
+} from "react-router-dom";
+
+import Footersection from '../web/footer';
+
 
 const { Header, Content, Footer } = Layout;
 class Main extends Component {
@@ -29,7 +35,7 @@ class Main extends Component {
           <Header className={activeClass}>
             <div className="logo" />
             <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} className="header-menu">
-              <Menu.Item key="about">About Us</Menu.Item>
+              <Menu.Item key="about"><Link to='/about'>About Us</Link></Menu.Item>
               <Menu.Item key="business">Business</Menu.Item>
               <Menu.Item key="farm">Farms &amp; Projects</Menu.Item>
               <Menu.Item key="technology">Technology</Menu.Item>
@@ -40,7 +46,7 @@ class Main extends Component {
             {children}
           </Content>
           <Footer>
-            BWAAP ©2021 
+           <Footersection />
           </Footer>
         </Layout>
       </>

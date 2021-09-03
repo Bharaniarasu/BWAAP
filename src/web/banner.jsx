@@ -180,6 +180,7 @@ const Banner = (props) => {
       </Row>
 
       <Row className="strip-gc">
+        <div className="overlay"></div>
         <Col span={18} align="center" offset="3">
           <div className="gc-captions">
                 <h3>Bwaap</h3>
@@ -240,22 +241,6 @@ const Banner = (props) => {
         </Col>
       </Row>
 
-      <Row className="section technology-bwaap">
-        <Col span={18} offset={3}>
-          <div className="about-content" align="center">
-            <h3>BWAAP </h3>
-            <h2>Technologies</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged
-            </p>
-          </div>
-        </Col>
-      </Row>
 
       <Row className="products-bwaap">
         <Col span={12} className="products-left"></Col>        
@@ -270,13 +255,22 @@ const Banner = (props) => {
         </Col>
       </Row>
 
-      <Row className="section bwaap-news">
-        <Col span={18} offset={3} align="center">
-            <h3>BWAAP</h3>
-            <h1>News & Articles</h1>
+
+      
+      <Row className="section technology-bwaap">
+        <Col span={18} offset={3}>
+          <div className="about-content" align="center">
+            <h3>BWAAP </h3>
+            <h2>Technologies</h2>
             <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged
             </p>
+          </div>
         </Col>
       </Row>
     </>
