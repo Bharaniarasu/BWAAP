@@ -6,7 +6,6 @@
 @import "./about/about.scss";
 
 
-$titleWhite : #ffffff;
 *,
 *::before,
 *::after {
@@ -20,8 +19,8 @@ html {
 
 
 .styleHeader {
-  background: #eee !important;
-  color     : #0000004d;
+  background: #25335a !important;
+    color: #ffffff;
 }
 
 body {
@@ -106,13 +105,15 @@ body,
   .copy-right{
     padding: 1em;
     background: #276226;
-    color: $titleWhite;
+    color: $white;
     p{
       margin: 0;
       font-weight: 600;
     }
   }
 }
+
+
 
 .home {
   &-header {
@@ -262,6 +263,20 @@ body,
   // background: #eee;
 }
 
+.bwaap-title-common{
+  h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+  h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    }
+  
+}
+
 // common
 
 .overlay {
@@ -365,18 +380,18 @@ body,
 
   .about-content{
     text-align: center;
-    color: $titleWhite;
+    color: $white;
   }
 
    h3{
     font-weight: 600;
-    color: $titleWhite;
+    color: $white;
     text-transform: uppercase;
     font-size: 1.5em;
   }
 
   h2{
-    color:$titleWhite;
+    color:$white;
     font-weight: 700;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -384,17 +399,17 @@ body,
 
   // button{
   //   background:transparent ;
-  //   border:2px solid $titleWhite;
+  //   border:2px solid $white;
   // }
   // button span{
-  //   color:$titleWhite;
+  //   color:$white;
   // }
 }
 
 .strip-gc {
   // background: rgb(28, 128, 28);
   background:url("./assets/images/global-challenges.jpg");
-  color: $titleWhite;
+  color: $white;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -405,7 +420,7 @@ body,
     padding:2em
   }
   h2 {
-    color: $titleWhite;
+    color: $white;
     text-transform: uppercase;
     font-size: 2em;
     margin: 0;
@@ -413,7 +428,7 @@ body,
   }
 
   h3{
-    color: $titleWhite;
+    color: $white;
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 500;
