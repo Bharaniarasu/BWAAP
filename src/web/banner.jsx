@@ -242,6 +242,23 @@ const Banner = (props) => {
       </Row>
 
 
+      <Row className="strip-gc">
+        <div className="overlay"></div>
+        <Col span={18} align="center" offset="3">
+          <div className="gc-captions">
+                <h3>Bwaap</h3>
+              <h2>Global Challenges</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <Button>Click Here</Button>
+          </div>
+        </Col>
+      </Row>
+
       <Row className="products-bwaap">
         <Col span={12} className="products-left"></Col>        
         <Col span={12}>

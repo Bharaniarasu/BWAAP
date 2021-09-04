@@ -1,27 +1,24 @@
-import React, { Component } from 'react';
-import {
-  Layout, Menu,
-} from 'antd';
-import {
-  Link
-} from "react-router-dom";
+import React, { Component } from "react";
+import { Layout, Menu, Dropdown  } from "antd";
+import { Link } from "react-router-dom";
+import { DownOutlined } from '@ant-design/icons';
 
-import Footersection from '../web/footer';
 
+import Footersection from "../web/footer";
 
 const { Header, Content, Footer } = Layout;
 class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeClass: '',
+      activeClass: "",
     };
   }
   componentDidMount() {
-    window.addEventListener('scroll', () => {
-      let activeClass = 'styleHeader';
+    window.addEventListener("scroll", () => {
+      let activeClass = "styleHeader";
       if (window.scrollY === 0) {
-        activeClass = '';
+        activeClass = "";
       }
       this.setState({ activeClass });
     });
@@ -34,23 +31,41 @@ class Main extends Component {
         <Layout className="wrapper">
           <Header className={activeClass}>
             <div className="logo" />
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} className="header-menu">
-              <Menu.Item key="about"><Link to='/about'>About Us</Link></Menu.Item>
+            <Menu
+              theme="dark"
+              mode="horizontal"
+              defaultSelectedKeys={["1"]}
+              className="header-menu"
+            >
+              <Menu.Item key="home"> <Link to="/">Home </Link></Menu.Item>
+              <Dropdown
+                overlay={
+                  <Menu>                    
+                    <Menu.Item key="about-bwaap"> <Link to="/about-bwaap">About BWAAP</Link></Menu.Item>
+                    <Menu.Item key="mdspeech"><Link to="/md-speech">MD's Message</Link></Menu.Item>
+                    <Menu.Item key="visionmission"><Link to="/vision-mission">Vision &amp; Mission</Link></Menu.Item>
+                  </Menu>
+                }
+                trigger={["click"]}
+              >
+                <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()} >
+                 <Menu.Item key="">About Us  <DownOutlined /></Menu.Item>
+                </a>
+              </Dropdown>
               <Menu.Item key="business">Business</Menu.Item>
-              <Menu.Item key="farm">Farms &amp; Projects</Menu.Item>
+              <Menu.Item key="farm">Farms &amp; Plantation</Menu.Item>
               <Menu.Item key="technology">Technology</Menu.Item>
               <Menu.Item key="products">Products</Menu.Item>
+             
             </Menu>
           </Header>
-          <Content>
-            {children}
-          </Content>
+          <Content>{children}</Content>
           <Footer>
-           <Footersection />
+            <Footersection />
           </Footer>
         </Layout>
       </>
-    )
+    );
   }
 }
 export default Main;

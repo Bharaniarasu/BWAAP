@@ -618,3 +618,31 @@ body,
     text-align: center;
   }
 }
+
+.quotes{
+  font-family: 'Courgette', cursive;
+  padding: 2em;
+
+  h3{
+      text-transform: inherit;
+      font-size: 1.5em;
+      line-height: 1.9;
+      color:rgb(7, 121, 7);
+      span{
+          font-size:1.5em;
+          // margin:0 .5em;
+      }
+      .author{
+          font-size:1em;
+         
+      }
+  }
+
+}
+.inner-banner {
+  text-align: center;
+//    height: 40vh;
+  position: relative;
+
+
+}   
