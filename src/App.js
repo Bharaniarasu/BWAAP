@@ -6,6 +6,8 @@ import Main from './main';
 // import Home from './home';
 import Web from './web';
 import Routes from './routes';
+import AOS from "aos";
+AOS.init();
 
 const browserHistory = createBrowserHistory();
 

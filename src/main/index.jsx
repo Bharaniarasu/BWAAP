@@ -3,7 +3,6 @@ import { Layout, Menu, Dropdown  } from "antd";
 import { Link } from "react-router-dom";
 import { DownOutlined } from '@ant-design/icons';
 
-
 import Footersection from "../web/footer";
 
 const { Header, Content, Footer } = Layout;
