@@ -29,14 +29,14 @@ class Main extends Component {
       <>
         <Layout className="wrapper">
           <Header className={activeClass}>
-            <div className="logo" />
+          <Link to="/"><div className="logo" /></Link>
             <Menu
               theme="dark"
               mode="horizontal"
               defaultSelectedKeys={["1"]}
               className="header-menu"
             >
-              <Menu.Item key="home"> <Link to="/">Home </Link></Menu.Item>
+           
               <Dropdown
                 overlay={
                   <Menu>                    

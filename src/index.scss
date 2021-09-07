@@ -278,7 +278,6 @@ body,
 
 
 .bwaap-title-common {
-  margin-bottom: 2em;
 
   h2 {
     text-transform: uppercase;
@@ -310,7 +309,6 @@ body,
   color: #000;
   height: 100%;
   width: auto;
-  margin: 1em;
   padding: 1em;
 }
 
@@ -321,7 +319,6 @@ body,
   color: #fff;
   height: 100%;
   width: auto;
-  margin: 1em;
   padding: 1em;
 }
 
@@ -472,11 +469,15 @@ body,
   }
 
   .farm-cards {
-    margin:  0 3em 5em;
+    margin:  2em;
+    padding: 16px;
+    transition: all .5s ease;
     // padding: 2em;
     img{
-      max-width: 80%;
+      max-width: 60%;
+      transition: all .5s ease;
     }
+    
     .hectares{
       text-align: center;
       h2{
@@ -494,8 +495,44 @@ body,
         color: #338424;
       }
     }
+
+  }
+
+  
+  .text-bg{
+    margin-top:12em;
+    h2{
+      background: url("./assets/images/home-bg.jpg");
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 4em;
+      font-weight: bold;
+      font-weight: 800;
+      -webkit-font-smoothing: antialiased;
+    }
   }
 }
+
+
+// .farm-cards:hover{
+//   // border: 1px solid #00000012;
+//   padding: 16px;
+//   box-shadow: 2px 2px 5px #00000030;
+//   transition: all .5s ease;
+//   img{
+//     transform: scale(1.1, 1.1);
+//   }
+//   .hectares{
+//     h2{
+//      color:#338424;
+//      transition: all .5s ease;
+//     }
+//   }
+// }
 
 .technology-bwaap {
   background: #f9f9f9;
@@ -603,3 +640,4 @@ body,
 
 
 }
+

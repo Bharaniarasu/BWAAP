@@ -23,6 +23,8 @@ import livestockIcon from "../assets/images/icons/livestock.png";
 import fishIcon from "../assets/images/icons/fish.png";
 import spicesIcon from "../assets/images/icons/spices.png";
 
+import businessIcon from "../assets/images/why.jpg";
+
 const { Title } = Typography;
 
 const Banner = (props) => {
@@ -32,7 +34,7 @@ const Banner = (props) => {
         {/* <div className="overlay"></div> */}
         <div className="home-bg"></div>
         <Col span={18} offset={3} align="center" data-aos="fade-down">
-          <div className="captions" >
+          <div className="captions">
             <Title>BWAAP</Title>
             <p>
               BWAAP aims to plant millions of trees through its Smart
@@ -56,19 +58,19 @@ const Banner = (props) => {
               <img src={healthIcon} width="100%" alt="bwaap" />
               <h2>Health</h2>
             </Col>
-            <Col span={4}  data-aos="fade-up"  data-aos-duration="1000">
+            <Col span={4} data-aos="fade-up" data-aos-duration="1000">
               <img src={wealthIcon} width="100%" alt="bwaap" />
               <h2>Wealth</h2>
             </Col>
-            <Col span={4}  data-aos="fade-up"  data-aos-duration="2000">
+            <Col span={4} data-aos="fade-up" data-aos-duration="2000">
               <img src={successIcon} width="100%" alt="bwaap" />
               <h2>Success</h2>
             </Col>
-            <Col span={4}  data-aos="fade-up"  data-aos-duration="3000">
+            <Col span={4} data-aos="fade-up" data-aos-duration="3000">
               <img src={spritualityIcon} width="100%" alt="bwaap" />
               <h2>Sprituality</h2>
             </Col>
-            <Col span={4}  data-aos="fade-up"  data-aos-duration="3000">
+            <Col span={4} data-aos="fade-up" data-aos-duration="3000">
               <img src={happinessIcon} width="100%" alt="bwaap" />
               <h2>Happiness</h2>
             </Col>
@@ -79,7 +81,11 @@ const Banner = (props) => {
       <Row className=" about-bwaap">
         <div className="overlay"></div>
         <Col span={18} offset={3}>
-          <div className="section about-content bwaap-title-common" data-aos="fade-up"  data-aos-duration="3000">
+          <div
+            className="section about-content bwaap-title-common"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h3>About</h3>
             <h2>Bees World Agro-froestry and Agri plantation</h2>
             <p>
@@ -96,112 +102,40 @@ const Banner = (props) => {
       </Row>
 
       <Row className="farms-projects section">
-        <Col span={24} align="center">
-          <div className="bwaap-title-common" data-aos="fade-up"  data-aos-duration="3000">
+        <Col span={16}>
+          <div
+            className="bwaap-title-common"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h3>Bwaap</h3>
             <h2>Business</h2>
+          </div>
+          <div className="" data-aos="fade-up" data-aos-duration="3000">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
+            <Button className="bwaap-btn-primary">Click Here</Button>
           </div>
         </Col>
-        <Col span={8} data-aos="fade-up"  data-aos-duration="1000">
-          <Row className="moto-content">
-            <Col span={4}>
-              <img src={healthIcon} width="100%" alt="bwaap" />
-            </Col>
-            <Col span={20}>
-              <h2>Health</h2>
-            </Col>
-            <Col span={24}>
-              <p>
-                To ensure we eat Organic nutrient Food products for
-                our Healthy living.
-              </p>
-            </Col>
-          </Row>
-        </Col>
-
-        <Col span={8} data-aos="fade-up"  data-aos-duration="2000">
-          <Row className="moto-content">
-            <Col span={4}>
-              <img src={wealthIcon} width="100%" alt="bwaap" />
-            </Col>
-            <Col span={20}>
-              <h2>Wealth</h2>
-            </Col>
-            <Col span={24}>
-              <p>
-                To benefit ourselves from Entrepreneurial,
-                Franchising, and Shareholder opportunities leading to
-                a Wealthy Life. 
-              </p>
-            </Col>
-          </Row>
-        </Col>
-
-        <Col span={8} data-aos="fade-up"  data-aos-duration="3000">
-          <Row className="moto-content">
-            <Col span={4}>
-              <img src={successIcon} width="100%" alt="bwaap" />
-            </Col>
-            <Col span={20}>
-              <h2>Success</h2>
-            </Col>
-            <Col span={24}>
-              <p>
-                To lead our Personal & Professional Life with Right
-                Livelihood involving Right View, Right Effort, Right
-                Focus eventually bringing a Successful Outcome in our life.  {" "}
-              </p>
-            </Col>
-          </Row>
-        </Col>
-
-        <Col span={8} data-aos="fade-up"  data-aos-duration="1000">
-          <Row className="moto-content">
-            <Col span={4}>
-              <img src={spritualityIcon} width="100%" alt="bwaap" />
-            </Col>
-            <Col span={20}>
-              <h2>Spirituality </h2>
-            </Col>
-            <Col span={24}>
-              <p>
-                To enrich ourselves with continuous Learning, Training,
-                Activities (ATMA Bank), and Charity Service building a
-                Healthy mindset for us. 
-              </p>
-            </Col>
-          </Row>
-        </Col>
-
-        <Col span={8} data-aos="fade-up"  data-aos-duration="2000">
-          <Row className="moto-content">
-            <Col span={4}>
-              <img src={happinessIcon} width="100%" alt="bwaap" />
-            </Col>
-            <Col span={20}>
-              <h2>Happiness</h2>
-            </Col>
-            <Col span={24}>
-              <p>
-                To achieve Holistic Happiness & to spread Happiness to Family,
-                Friends, Society, State, Nation & Universe.  
-              </p>
-            </Col>
-          </Row>
+        <Col span={8} data-aos="fade-up" data-aos-duration="2000">
+          <img src={businessIcon} width="100%" alt="bwaap" />
         </Col>
       </Row>
 
-
-
       <Row className="strip-gc">
         <div className="overlay"></div>
-        <Col span={18} align="center" offset="3"  data-aos="fade-up"  data-aos-duration="3000"s>
+        <Col
+          span={18}
+          align="center"
+          offset="3"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          s
+        >
           <div className="bwaap-title-common section">
             <h3>Bwaap</h3>
             <h2>Global Challenges</h2>
@@ -216,18 +150,17 @@ const Banner = (props) => {
         </Col>
       </Row>
 
-      
       <Row className="section farms-plantations">
-        <Col span={24} align="center">
-          <div className="bwaap-title-common">
-            <h3>Farms & Plantation</h3>
+        <Col span={10} align="left">
+          <div className="bwaap-title-common text-bg">
+            <h3>bwaap's</h3>
             <h2>Farms & Plantation</h2>
           </div>
         </Col>
 
-        <Col span={24} offset={2}>
+        <Col span={14}>
           <Row>
-            <Col span={5} className="farm-cards"  data-aos="fade-up"  >
+            <Col span={5} className="farm-cards" data-aos="fade-up">
               <Row className="">
                 <Col span={12}>
                   <img src={agarwoodIcon} width="100%" alt="bwaap" />
@@ -243,7 +176,12 @@ const Banner = (props) => {
               </Row>
             </Col>
 
-            <Col span={5} className="farm-cards"  data-aos="fade-up"  data-aos-duration="2000">
+            <Col
+              span={5}
+              className="farm-cards"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <Row className="">
                 <Col span={12}>
                   <img src={redsanderIcon} width="100%" alt="bwaap" />
@@ -259,7 +197,12 @@ const Banner = (props) => {
               </Row>
             </Col>
 
-            <Col span={5} className="farm-cards" data-aos="fade-up"  data-aos-duration="3000">
+            <Col
+              span={5}
+              className="farm-cards"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <Row className="">
                 <Col span={12}>
                   <img src={vegtableIcon} width="100%" alt="bwaap" />
@@ -276,7 +219,7 @@ const Banner = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col span={5} className="farm-cards" data-aos="fade-up"  >
+            <Col span={5} className="farm-cards" data-aos="fade-up">
               <Row className="">
                 <Col span={12}>
                   <img src={fruitsIcon} width="100%" alt="bwaap" />
@@ -292,13 +235,19 @@ const Banner = (props) => {
               </Row>
             </Col>
 
-            <Col span={5} className="farm-cards" data-aos="fade-up"  data-aos-duration="2000">
+            <Col
+              span={5}
+              className="farm-cards"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <Row className="">
                 <Col span={12}>
                   <img src={honeyIcon} width="100%" alt="bwaap" />
                 </Col>
                 <Col span={12} className="hectares">
-                  <h2>All FARMS</h2>
+                  <h2>All</h2>
+                  <h3>Farms</h3>
                 </Col>
 
                 <Col span={24} align="middle" className="plantation">
@@ -307,7 +256,12 @@ const Banner = (props) => {
               </Row>
             </Col>
 
-            <Col span={5} className="farm-cards" data-aos="fade-up"  data-aos-duration="3000">
+            <Col
+              span={5}
+              className="farm-cards"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <Row className="">
                 <Col span={12} className="hectares">
                   <img src={mediplantIcon} width="100%" alt="bwaap" />
@@ -324,7 +278,7 @@ const Banner = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col span={5} className="farm-cards" data-aos="fade-up" >
+            <Col span={5} className="farm-cards" data-aos="fade-up">
               <Row className="">
                 <Col span={12}>
                   <img src={livestockIcon} width="100%" alt="bwaap" />
@@ -340,7 +294,12 @@ const Banner = (props) => {
               </Row>
             </Col>
 
-            <Col span={5} className="farm-cards" data-aos="fade-up"  data-aos-duration="2000">
+            <Col
+              span={5}
+              className="farm-cards"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <Row className="">
                 <Col span={12}>
                   <img src={fishIcon} width="100%" alt="bwaap" />
@@ -356,7 +315,12 @@ const Banner = (props) => {
               </Row>
             </Col>
 
-            <Col span={5} className="farm-cards" data-aos="fade-up"  data-aos-duration="3000">
+            <Col
+              span={5}
+              className="farm-cards"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <Row className="">
                 <Col span={12}>
                   <img src={spicesIcon} width="100%" alt="bwaap" />
@@ -376,8 +340,13 @@ const Banner = (props) => {
       </Row>
 
       <Row className="products-bwaap">
-        <Col span={12} className="products-left"  data-aos="fade-left"  data-aos-duration="2000"></Col>
-        <Col span={12}  data-aos="fade-right"  data-aos-duration="2000">
+        <Col
+          span={12}
+          className="products-left"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        ></Col>
+        <Col span={12} data-aos="fade-right" data-aos-duration="2000">
           <div className="content bwaap-title-common ">
             <h3>BWAAP</h3>
             <h1>Products</h1>
@@ -391,7 +360,7 @@ const Banner = (props) => {
       </Row>
 
       <Row className="section technology-bwaap">
-        <Col span={18} offset={3}  data-aos="fade-up"  data-aos-duration="2000">
+        <Col span={18} offset={3} data-aos="fade-up" data-aos-duration="2000">
           <div className="about-content bwaap-title-common " align="center">
             <h3>BWAAP </h3>
             <h2>Technologies</h2>
