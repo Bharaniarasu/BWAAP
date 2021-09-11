@@ -1,10 +1,10 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { Row, Col } from "antd";
-import { RightOutlined } from '@ant-design/icons';
+// import { RightOutlined } from '@ant-design/icons';
 // import Section1 from "./section-1";
 import aboutImg from "../assets/images/020.png";
-import missionImg from "../assets/images/mission.png";
+// import missionImg from "../assets/images/mission.png";
 
 const About = () => 
 <>

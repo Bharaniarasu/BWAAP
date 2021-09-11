@@ -1,17 +1,16 @@
 @import "~antd/dist/antd.css";
 @import "./variables.scss";
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "./web/footerStyle.css";
 @import "./about/about.scss";
-@import "aos/dist/aos.css"; 
+@import "aos/dist/aos.css";
 
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: none;
+  outline   : none;
 }
 
 html {
@@ -21,22 +20,27 @@ html {
 
 .styleHeader {
   background: #25335a !important;
-  color: #ffffff;
+  color     : #ffffff;
 }
 
 body {
-  margin: 0;
-  // font-family            : 'Roboto', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  margin                 : 0;
+  font-family            : 'Work Sans', sans-serif;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url('./assets/images/be-pointr.png'), auto;
-  color: #555555;
-  font-size: 16px;
-  background-color: #f1f3f6;
-  text-align: justify;
+  cursor                 : url('./assets/images/be-pointr.png'), auto;
+  color                  : #555555;
+  font-size              : 16px;
+  background-color       : #f1f3f6;
+  text-align             : justify;
   @extend .bodyScroll;
   background-image: url('./assets/images/footer_bg.png');
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 h1,
@@ -50,7 +54,7 @@ h6 {
 
 ul,
 li {
-  margin: 0;
+  margin : 0;
   padding: 0;
 }
 
@@ -62,16 +66,16 @@ a,
 a:hover,
 a:active {
   text-decoration: none;
-  color: inherit;
+  color          : inherit;
 }
 
 
 
 .logo {
-  float: left;
-  width: 120px;
-  height: 31px;
-  margin: 16px 24px 16px 0;
+  float     : left;
+  width     : 120px;
+  height    : 31px;
+  margin    : 16px 24px 16px 0;
   background: #66666670;
   box-shadow: inset 0 -3em 3em #0000001a, 0 0 0 2px #eee, 0.3em 0.3em 1em #0000004d;
 }
@@ -87,18 +91,18 @@ body,
   display: block;
 
   .ant-layout-header {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
+    position  : fixed;
+    z-index   : 1;
+    width     : 100%;
     background: transparent;
     // padding: 0 1em;
     transition: 0.5s ease all;
-    z-index: 2;
+    z-index   : 2;
 
 
     .header-menu {
       background: transparent;
-      float: right;
+      float     : right;
 
       & .ant-menu-item {
         text-transform: capitalize;
@@ -107,18 +111,16 @@ body,
   }
 
   .ant-layout-footer {
-    // background-color: #3A2471;
-    // min-height      : 4em;
     padding: 0;
   }
 
   .copy-right {
-    padding: 1em;
+    padding   : 1em;
     background: #276226;
-    color: $white;
+    color     : $white;
 
     p {
-      margin: 0;
+      margin     : 0;
       font-weight: 600;
     }
   }
@@ -128,37 +130,36 @@ body,
 
 .home {
   &-header {
-    background-color: #0d98ba;
-    height: 80vh;
-    position: relative;
-    background-image: url('./assets/images/wave.webp');
+    background-color   : #0d98ba;
+    height             : 80vh;
+    position           : relative;
+    background-image   : url('./assets/images/wave.webp');
     background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    min-height: 100vh;
+    background-size    : cover;
+    width              : 100%;
+    height             : 100%;
+    position           : relative;
+    min-height         : 100vh;
 
     &-title {
-      background: rgba(97, 76, 167, 0.10);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(20.0px);
+      background             : rgba(97, 76, 167, 0.10);
+      box-shadow             : 0 20px 40px rgba(0, 0, 0, 0.6);
+      backdrop-filter        : blur(20.0px);
       -webkit-backdrop-filter: blur(20.0px);
-      border-radius: 1em;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      // width                  : calc(100% - 60%);
-      color: $milkWhite;
-      position: absolute;
-      top: calc(100% - 60%);
-      left: 1em;
-      padding: 2em;
+      border-radius          : 1em;
+      border                 : 1px solid rgba(255, 255, 255, 0.18);
+      color                  : $milkWhite;
+      position               : absolute;
+      top                    : calc(100% - 60%);
+      left                   : 1em;
+      padding                : 2em;
     }
   }
 }
 
 .padd {
   // padding : 1em 2em;
-  padding: 5em;
+  padding : 5em;
   position: relative;
 }
 
@@ -168,33 +169,33 @@ body,
 
 .sup-head {
   position: absolute;
-  width: 100%;
-  top: -4px;
-  left: 0;
+  width   : 100%;
+  top     : -4px;
+  left    : 0;
 
   span:nth-child(1) {
     background-color: green;
-    padding: 2em;
+    padding         : 2em;
   }
 
   span:nth-child(2) {
     background-color: rgb(45, 0, 128);
-    padding: 2em;
+    padding         : 2em;
   }
 
   span:nth-child(3) {
     background-color: rgb(24, 145, 182);
-    padding: 2em;
+    padding         : 2em;
   }
 
   span:nth-child(4) {
     background-color: rgb(212, 65, 97);
-    padding: 2em;
+    padding         : 2em;
   }
 
   span:nth-child(5) {
     background-color: rgb(190, 233, 34);
-    padding: 2em;
+    padding         : 2em;
   }
 
 }
@@ -204,43 +205,43 @@ body,
 .mission {
   &-moto {
     position: absolute;
-    width: 100%;
-    top: -8em;
-    left: 0;
-    z-index: 1;
+    width   : 100%;
+    top     : -8em;
+    left    : 0;
+    z-index : 1;
 
     .ant-col {
-      text-align: center;
-      background: rgba(13, 152, 186, 0.2);
-      box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+      text-align     : center;
+      background     : rgba(13, 152, 186, 0.2);
+      box-shadow     : 0 4px 2px rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(2px);
-      color: #fff;
-      text-shadow: 1px 1px #000;
+      color          : #fff;
+      text-shadow    : 1px 1px #000;
 
       &:nth-child(1) {
-        border-top: 1em solid green;
-        padding: 2em;
+        border-top   : 1em solid green;
+        padding      : 2em;
         border-radius: 1em 0 0 1em;
       }
 
       &:nth-child(2) {
         border-top: 1em solid rgb(45, 0, 128);
-        padding: 2em;
+        padding   : 2em;
       }
 
       &:nth-child(3) {
         border-top: 1em solid rgb(24, 145, 182);
-        padding: 2em;
+        padding   : 2em;
       }
 
       &:nth-child(4) {
         border-top: 1em solid rgb(212, 65, 97);
-        padding: 2em;
+        padding   : 2em;
       }
 
       &:nth-child(5) {
-        border-top: 1em solid rgb(190, 233, 34);
-        padding: 2em;
+        border-top   : 1em solid rgb(190, 233, 34);
+        padding      : 2em;
         border-radius: 0 1em 1em 0;
 
       }
@@ -253,25 +254,18 @@ body,
 }
 
 .one {
-  display: block;
-  height: auto;
-  margin: 0 auto 0 auto;
-  padding-top: 6em;
-  background-image: url("./assets/images/020.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  display              : block;
+  height               : auto;
+  margin               : 0 auto 0 auto;
+  padding-top          : 6em;
+  background-image     : url("./assets/images/020.png");
+  background-position  : center;
+  background-repeat    : no-repeat;
   background-attachment: fixed;
 }
 
 .sec-color {
   background-color: #f4f4f4;
-}
-
-// Modified
-
-.section {
-  padding: 5em;
-  // background: #eee;
 }
 
 // common
@@ -281,87 +275,73 @@ body,
 
   h2 {
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2.5em;
+    font-weight   : 700;
+    font-size     : 2.5em;
   }
 
   h3 {
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1em;
+    font-weight   : 600;
+    font-size     : 1em;
   }
 
 }
 
 .overlay {
   background: #102806d9;
-  height: 100%;
-  position: absolute;
+  height    : 100%;
+  position  : absolute;
   // z-index: 999;
-  opacity: 1;
-  width: 100%;
+  opacity   : 1;
+  width     : 100%;
 }
 
 .bwaap-btn-primary {
   border-radius: 10px;
-  background: transparent !important;
-  border: 2px solid #000;
-  color: #000;
-  height: 100%;
-  width: auto;
-  padding: 1em;
+  background   : transparent !important;
+  border       : 2px solid #000;
+  color        : #000;
+  height       : 100%;
+  width        : auto;
+  padding      : 1em;
 }
 
 .bwaap-btn-secondary {
   border-radius: 10px;
-  background: transparent !important;
-  border: 2px solid #fff;
-  color: #fff;
-  height: 100%;
-  width: auto;
-  padding: 1em;
+  background   : transparent !important;
+  border       : 2px solid #fff;
+  color        : #fff;
+  height       : 100%;
+  width        : auto;
+  padding      : 1em;
 }
 
 
 // Home Page
 .home-page {
-  // background: #0d98ba;
-  height: 80vh;
-  // background           : url("./assets/images/home-bg.jpg");
-  //   background-size      : cover;
-  // background-attachment: fixed;
-  // background-position  : center;
+  height          : 80vh;
   background-color: #0d98ba;
-  // background: URL("./assets/images/wave.webp");
-
-
 
   .home-bg {
-    background: url("./assets/images/wave.webp");
+    background         : url("./assets/images/wave.webp");
     background-position: bottom;
-    /* z-index: 0; */
-    height: 98%;
-    /* max-width: 100%; */
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    // background-position: top;
+    height             : 100%;
+    width              : 100%;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    position           : absolute;
   }
 
   .captions {
-    display: block;
+    display   : block;
     margin-top: 15%;
-    position: relative;
-    color: #fff;
+    position  : relative;
+    color     : #fff;
   }
 
   h1 {
     color: #fff;
   }
-
-
-
 }
 
 .moto-quotes {
@@ -372,9 +352,9 @@ body,
   }
 
   h2 {
-    padding: 1em;
-    color: #338424;
-    font-size: 16px;
+    padding    : 1em;
+    color      : #338424;
+    font-size  : 16px;
     font-weight: 600;
   }
 
@@ -387,7 +367,7 @@ body,
   }
 
   .moto-sec {
-    padding: 1em;
+    padding   : 1em;
     text-align: center;
 
     img {
@@ -397,18 +377,18 @@ body,
 }
 
 .about-bwaap {
-  background: url("./assets/images/home-bg.jpg");
-  background-position: center;
+  background           : url("./assets/images/home-bg.jpg");
+  background-position  : center;
   background-attachment: fixed;
-  position: relative;
-  background-size: cover;
-  position: relative;
+  position             : relative;
+  background-size      : cover;
+  position             : relative;
 
 
 
   .about-content {
     text-align: center;
-    color: $white;
+    color     : $white;
   }
 
   h3,
@@ -419,14 +399,12 @@ body,
 }
 
 .strip-gc {
-  // background: rgb(28, 128, 28);
-  background: url("./assets/images/global-challenges.jpg");
-  color: $white;
-  position: relative;
+  background         : url("./assets/images/global-challenges.jpg");
+  color              : $white;
+  position           : relative;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-repeat  : no-repeat;
+  background-size    : cover;
 
   .gc-captions {
     padding: 2em
@@ -445,11 +423,11 @@ body,
 }
 
 .strip-farming {
-  background: url("./assets/images/home-bg.jpg");
-  color: #fff;
-  background-size: cover;
+  background         : url("./assets/images/home-bg.jpg");
+  color              : #fff;
+  background-size    : cover;
   background-position: bottom;
-  position: relative;
+  position           : relative;
 
 
   .farmingprojects-captions {
@@ -463,90 +441,80 @@ body,
 
 .farms-plantations {
   background: $white;
+
   h1 {
-    font-size: 2.5em;
+    font-size  : 2.5em;
     font-weight: 700;
   }
 
   .farm-cards {
-    margin:  2em;
-    padding: 16px;
+    margin    : 2em;
+    padding   : 16px;
     transition: all .5s ease;
+
     // padding: 2em;
-    img{
-      max-width: 60%;
+    img {
+      max-width : 60%;
       transition: all .5s ease;
     }
-    
-    .hectares{
+
+    .hectares {
       text-align: center;
-      h2{
+
+      h2 {
         font-weight: 700;
-        font-size: 2em;
+        font-size  : 2em;
       }
-      h3{
+
+      h3 {
         font-weight: 600;
       }
     }
-    .plantation{
-      margin-top:1em;
-      h4{
+
+    .plantation {
+      margin-top: 1em;
+
+      h4 {
         font-weight: 700;
-        color: #338424;
+        color      : #338424;
       }
     }
 
   }
 
-  
-  .text-bg{
-    margin-top:12em;
-    h2{
-      background: url("./assets/images/home-bg.jpg");
-      background-repeat: repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+
+  .text-bg {
+    margin-top: 12em;
+
+    h2 {
+      background             : url("./assets/images/home-bg.jpg");
+      background-repeat      : repeat;
+      background-size        : cover;
+      background-position    : center;
+      background-attachment  : fixed;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 4em;
-      font-weight: bold;
-      font-weight: 800;
-      -webkit-font-smoothing: antialiased;
+      font-size              : 4em;
+      font-weight            : bold;
+      font-weight            : 800;
+      -webkit-font-smoothing : antialiased;
     }
   }
 }
-
-
-// .farm-cards:hover{
-//   // border: 1px solid #00000012;
-//   padding: 16px;
-//   box-shadow: 2px 2px 5px #00000030;
-//   transition: all .5s ease;
-//   img{
-//     transform: scale(1.1, 1.1);
-//   }
-//   .hectares{
-//     h2{
-//      color:#338424;
-//      transition: all .5s ease;
-//     }
-//   }
-// }
 
 .technology-bwaap {
   background: #f9f9f9;
 
   h2 {
-    font-size: 2.5em;
-    font-weight: 700;
+    font-size     : 2.5em;
+    font-weight   : 700;
     text-transform: uppercase;
 
   }
 
   h3 {
-    font-size: 1em;
-    font-weight: 500;
+    font-size     : 1em;
+    font-weight   : 500;
     text-transform: uppercas8;
   }
 }
@@ -554,15 +522,15 @@ body,
 .products-bwaap {
 
   h1 {
-    font-weight: 700;
-    font-size: 2.5em;
+    font-weight   : 700;
+    font-size     : 2.5em;
     text-transform: uppercase;
   }
 
   .products-left {
-    background: url("./assets/images/home-bg.jpg");
+    background         : url("./assets/images/home-bg.jpg");
     background-position: center;
-    background-size: cover;
+    background-size    : cover;
   }
 
   .content {
@@ -572,24 +540,24 @@ body,
 }
 
 .footer-section {
-  margin: 0;
-  padding: 0;
-  background: url("./assets/images/home-bg.jpg");
-  background-size: cover;
+  margin             : 0;
+  padding            : 0;
+  background         : url("./assets/images/home-bg.jpg");
+  background-size    : cover;
   background-position: bottom center;
-  position: relative;
-  color: #fff;
+  position           : relative;
+  color              : #fff;
 
 
   h2,
   h3 {
-    font-weight: 700;
+    font-weight   : 700;
     text-transform: uppercase;
-    color: #fff;
+    color         : #fff;
   }
 
   h4 {
-    color: #fff;
+    color      : #fff;
     font-weight: 600;
   }
 
@@ -612,13 +580,13 @@ body,
 
 .quotes {
   font-family: 'Courgette', cursive;
-  padding: 2em;
+  padding    : 2em;
 
   h3 {
     text-transform: inherit;
-    font-size: 1.5em;
-    line-height: 1.9;
-    color: rgb(7, 121, 7);
+    font-size     : 1.5em;
+    line-height   : 1.9;
+    color         : rgb(7, 121, 7);
 
     span {
       font-size: 1.5em;
@@ -634,10 +602,39 @@ body,
 }
 
 .inner-banner {
-  text-align: center;
+  text-align  : center;
   //    height: 40vh;
-  position: relative;
+  position    : relative;
 
 
 }
 
+// .masked-animation{
+//   0%,100%{background-position:50% 35%}50%{background-position:50% 65%}
+// }
+.test {
+  background-position                 : 50% 50%;
+  background-repeat                   : no-repeat;
+  // background-clip                  : text;
+  // -webkit-background-clip          : text;
+  -webkit-animation-name              : masked-animation;
+  animation-name                      : masked-animation;
+  -webkit-animation-duration          : 15s;
+  animation-duration                  : 15s;
+  -webkit-animation-iteration-count   : infinite;
+  animation-iteration-count           : infinite;
+  -webkit-animation-timing-function   : linear;
+  animation-timing-function           : linear;
+}
+
+@keyframes masked-animation {
+
+  0%,
+  100% {
+    background-position: 50% 35%
+  }
+
+  50% {
+    background-position: 50% 65%
+  }
+}

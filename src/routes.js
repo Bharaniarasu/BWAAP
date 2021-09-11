@@ -3,7 +3,7 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 import { compose } from 'recompact';
 
 import Loader from './shared/loader';
-import NotFound from './shared/not-found';
+// import NotFound from './shared/not-found';
 
 // note: Keep the components in ascending for standard
 const Home = lazy(() => import('./home'));

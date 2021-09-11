@@ -23,7 +23,8 @@ class Main extends Component {
     });
   }
   render() {
-    const { history, children } = this.props;
+    // const { history, children } = this.props;
+    const { children } = this.props;
     const { activeClass } = this.state;
     return (
       <>
@@ -47,9 +48,9 @@ class Main extends Component {
                 }
                 trigger={["click"]}
               >
-                <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()} >
+                <Link className="ant-dropdown-link" onClick={(e) => e.preventDefault()} >
                  <Menu.Item key="">About Us  <DownOutlined /></Menu.Item>
-                </a>
+                </Link>
               </Dropdown>
               <Menu.Item key="business">Business</Menu.Item>
               <Menu.Item key="farm">Farms &amp; Plantation</Menu.Item>

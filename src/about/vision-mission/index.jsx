@@ -4,11 +4,11 @@ import { Row, Col } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 
 import missionImg from "../../assets/images/mission.png";
-import healthIcon from "../../assets/images/icons/health.png";
-import wealthIcon from "../../assets/images/icons/wealth.png";
-import successIcon from "../../assets/images/icons/success.png";
-import spritualityIcon from "../../assets/images/icons/sprituality.png";
-import happinessIcon from "../../assets/images/icons/happiness.png";
+// import healthIcon from "../../assets/images/icons/health.png";
+// import wealthIcon from "../../assets/images/icons/wealth.png";
+// import successIcon from "../../assets/images/icons/success.png";
+// import spritualityIcon from "../../assets/images/icons/sprituality.png";
+// import happinessIcon from "../../assets/images/icons/happiness.png";
 
 const About = () => (
   <>

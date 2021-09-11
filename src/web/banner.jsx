@@ -1,18 +1,12 @@
-// import { auto } from 'async';
-// import React, { useEffect, useState } from 'react';
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { Row, Col, Typography, Button } from "antd";
 
-// Images
-// import Target from "../assets/svg/health.svg";
-// import farmimage from "../assets/images/smart-farm.jpg";
 import healthIcon from "../assets/images/icons/health.png";
 import wealthIcon from "../assets/images/icons/wealth.png";
 import successIcon from "../assets/images/icons/success.png";
 import spritualityIcon from "../assets/images/icons/sprituality.png";
 import happinessIcon from "../assets/images/icons/happiness.png";
-
 import agarwoodIcon from "../assets/images/icons/agar-wood.png";
 import redsanderIcon from "../assets/images/icons/red-sanders.png";
 import vegtableIcon from "../assets/images/icons/vegetables.png";
@@ -31,7 +25,6 @@ const Banner = (props) => {
   return (
     <>
       <Row className=" home-page">
-        {/* <div className="overlay"></div> */}
         <div className="home-bg"></div>
         <Col span={18} offset={3} align="center" data-aos="fade-down">
           <div className="captions">
@@ -46,13 +39,13 @@ const Banner = (props) => {
           </div>
           <div className="btn-links">
             <Button className="bwaap-btn-secondary">Products</Button>
-            <Button className="bwaap-btn-secondary">Farms & Plantation</Button>
+            <Button className="bwaap-btn-secondary">Farms &amp; Plantation</Button>
           </div>
         </Col>
       </Row>
 
       <Row className="section moto-quotes" justify="space-between" align="top">
-        <Col className="moto-sec" span={24} offset={2}>
+        <Col className="moto-sec" span={22} offset={2}>
           <Row>
             <Col span={4} data-aos="fade-up">
               <img src={healthIcon} width="100%" alt="bwaap" />
@@ -126,7 +119,7 @@ const Banner = (props) => {
         </Col>
       </Row>
 
-      <Row className="strip-gc">
+      <Row className="strip-gc test">
         <div className="overlay"></div>
         <Col
           span={18}
@@ -154,7 +147,7 @@ const Banner = (props) => {
         <Col span={10} align="left">
           <div className="bwaap-title-common text-bg">
             <h3>bwaap's</h3>
-            <h2>Farms & Plantation</h2>
+            <h2>Farms &amp; Plantation</h2>
           </div>
         </Col>
 
