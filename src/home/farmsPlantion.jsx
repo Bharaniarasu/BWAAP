@@ -14,190 +14,33 @@ import spicesIcon from "../assets/images/icons/spices.png";
 
 const GlobalChallenges = (props) => {
   return (
-    <Row className="section farms-plantations">
-      <Col span={10} align="left">
+    <Row className="farms-plantations p-3">
+      <Col span={8}>
+        <Row>
+          <Col span={3}>
+            <img src={livestockIcon} width="100%" alt="bwaap" />
+            <h4>Livestock</h4>
+          </Col>
+          <Col span={3} offset={16}>
+            <img src={livestockIcon} width="100%" alt="bwaap" />
+            <h4>Livestock</h4>
+          </Col>
+          <Col span={3}>
+            <img src={livestockIcon} width="100%" alt="bwaap" />
+            <h4>Livestock</h4>
+          </Col>
+        </Row>
+      </Col>
+      <Col span={8}>
         <div className="bwaap-title-common text-bg">
-          <h3>bwaap's</h3>
-          <h2>Farms &amp; Plantation</h2>
+          <h3>Farms &amp; Plantation</h3>
         </div>
       </Col>
-
-      <Col span={14}>
+      <Col span={8}>
         <Row>
-          <Col span={5} className="farm-cards" data-aos="fade-up">
-            <Row className="">
-              <Col span={12}>
-                <img src={agarwoodIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>4000</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Agarwood Plantation</h4>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col
-            span={5}
-            className="farm-cards"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <Row className="">
-              <Col span={12}>
-                <img src={redsanderIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>4000</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Redsanders Plantation</h4>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col
-            span={5}
-            className="farm-cards"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <Row className="">
-              <Col span={12}>
-                <img src={vegtableIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>1000</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Vegetables</h4>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row>
-          <Col span={5} className="farm-cards" data-aos="fade-up">
-            <Row className="">
-              <Col span={12}>
-                <img src={fruitsIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>1000</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Fruits Farming</h4>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col
-            span={5}
-            className="farm-cards"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <Row className="">
-              <Col span={12}>
-                <img src={honeyIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>All</h2>
-                <h3>Farms</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Honey Bee Farming</h4>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col
-            span={5}
-            className="farm-cards"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <Row className="">
-              <Col span={12} className="hectares">
-                <img src={mediplantIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>100</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Medicinal Plantation</h4>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row>
-          <Col span={5} className="farm-cards" data-aos="fade-up">
-            <Row className="">
-              <Col span={12}>
-                <img src={livestockIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>500</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Livestock</h4>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col
-            span={5}
-            className="farm-cards"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <Row className="">
-              <Col span={12}>
-                <img src={fishIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>100</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Fish Farming</h4>
-              </Col>
-            </Row>
-          </Col>
-
-          <Col
-            span={5}
-            className="farm-cards"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <Row className="">
-              <Col span={12}>
-                <img src={spicesIcon} width="100%" alt="bwaap" />
-              </Col>
-              <Col span={12} className="hectares">
-                <h2>500</h2>
-                <h3>Hectare</h3>
-              </Col>
-
-              <Col span={24} align="middle" className="plantation">
-                <h4>Spices Farming</h4>
-              </Col>
-            </Row>
+          <Col span={3} push={16}>
+            <img src={livestockIcon} width="100%" alt="bwaap" />
+            <h4>Livestock</h4>
           </Col>
         </Row>
       </Col>

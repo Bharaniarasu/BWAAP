@@ -2,28 +2,31 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { Row, Col, Button } from "antd";
 
-const AboutBwaap = (props) => {
+const AboutBwaap = () => {
   return (
     <Row className=" about-bwaap">
-      <div className="overlay"></div>
-      <Col span={18} offset={3}>
-        <div
-          className="section about-content bwaap-title-common"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          <h3>About</h3>
-          <h2>Bees World Agro-froestry and Agri plantation</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged
-          </p>
-          <Button className="bwaap-btn-secondary">About Us</Button>
-        </div>
+      <div className="about-overlay"></div>
+      <Col
+        span={24}
+        className="p-2"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <h2>About</h2>
+        <p>
+          We are BWAAP, a Social Entrepreneurship firm focused on making People
+          Healthier, Planet Greener and Nurturing Nature. We blends Large Scale
+          Organic Food Produce with Automated Smart Digital Farming system,
+          Smart Farm to Home Business model & Omni-Channel customer experience
+          with a firm belief of addressing Global challenges of Food, Climate,
+          Land, Resources & Soil.
+          <br />
+          Organic Food Produce to nurture Nature & People holistically, Smart
+          Digital Farming for real-time forecast & efficient farm output, Smart
+          Farm to Home model to offer healthy products at shareholder price &
+          Omni-Channel marketing for enriched consumer experience.
+        </p>
+        <Button>About Us</Button>
       </Col>
     </Row>
   );

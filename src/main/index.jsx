@@ -25,6 +25,7 @@ class Main extends Component {
   render() {
     // const { history, children } = this.props;
     const { children } = this.props;
+    console.log('--', this.props);
     const { activeClass } = this.state;
     return (
       <>

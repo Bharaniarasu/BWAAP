@@ -18,7 +18,6 @@ const Footer = (props) => {
   return (
     <>
       <Row className="footer-section">
-        <div className="overlay"></div>
         <Col span={6}>
           <div className="foot-logo">
             <img src={happinessIcon} width="50%" alt="bwaap" />
