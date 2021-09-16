@@ -12,7 +12,7 @@ import livestockIcon from "../assets/images/icons/livestock.png";
 import fishIcon from "../assets/images/icons/fish.png";
 import spicesIcon from "../assets/images/icons/spices.png";
 
-const GlobalChallenges = (props) => {
+const FarmsPlantion = (props) => {
   return (
     <Row className="farms-plantations p-3">
       <Col span={8}>
@@ -47,4 +47,4 @@ const GlobalChallenges = (props) => {
     </Row>
   );
 };
-export default withRouter(GlobalChallenges);
+export default withRouter(FarmsPlantion);

@@ -17,7 +17,7 @@ const Home = () => (
     <AboutBwaap />
     <Business />
     <GlobalChallenges />
-    {/* <FarmsPlantion /> */}
+    <FarmsPlantion />
     <Products />
     <Technologies />
   </>

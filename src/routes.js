@@ -10,6 +10,11 @@ const Home = lazy(() => import('./home'));
 const About = lazy(() => import('./about'));
 const VisionMission = lazy(() => import('./about/vision-mission'));
 const mdspeech = lazy(() => import('./about/md-speech'));
+const Business = lazy(() => import('./business'));
+const ourResponsibility = lazy(() => import('./our-responsibility'));
+const rightLivelihood = lazy(() => import('./right-livelihood'));
+const Farmsproducts = lazy(() => import('./farms-products'));
+const Technology = lazy(() => import('./technology'));
 
 const Routes = () => (
   <Suspense fallback={<Loader />}>
@@ -18,6 +23,11 @@ const Routes = () => (
       <Route exact path="/about-bwaap" component={About} />
       <Route exact path="/vision-mission" component={VisionMission} />
       <Route exact path="/md-speech" component={mdspeech} />
+      <Route exact path="/business" component={Business} />
+      <Route exact path="/farms-and-products" component={Farmsproducts} />
+      <Route exact path="/technology" component={Technology} />
+      <Route exact path="/our-responsibility" component={ourResponsibility} />
+      <Route exact path="/right-livelihood" component={rightLivelihood} />
       {/* <Route component={NotFound} /> */}
     </Switch>
   </Suspense>
