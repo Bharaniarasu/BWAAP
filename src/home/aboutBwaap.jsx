@@ -4,11 +4,10 @@ import { Row, Col, Button } from "antd";
 
 const AboutBwaap = () => {
   return (
-    <Row className=" about-bwaap">
-      <div className="about-overlay"></div>
+    <Row className=" about-bwaap p-2">
       <Col
         span={24}
-        className="p-2"
+        className="about-bwaap-text"
         data-aos="fade-up"
         data-aos-duration="3000"
       >

@@ -4,10 +4,11 @@ import { withRouter } from "react-router-dom";
 import Banner from "./banner";
 import Moto from "./moto";
 import AboutBwaap from "./aboutBwaap";
+import Rightlivelihood from './rightlivelihood';
 import Business from "./business";
 import GlobalChallenges from "./globalChallenges";
-import FarmsPlantion from "./farmsPlantion";
-import Products from "./products";
+import SmartFarmsAndProducts from "./smartFarmsAndProducts";
+import OmniChannel from "./omniChannel";
 import Technologies from "./technologies";
 
 const Home = () => (
@@ -15,11 +16,12 @@ const Home = () => (
     <Banner />
     <Moto />
     <AboutBwaap />
-    <Business />
-    <GlobalChallenges />
-    <FarmsPlantion />
-    <Products />
+    <Rightlivelihood />
     <Technologies />
+    <GlobalChallenges />
+    <Business />
+    <SmartFarmsAndProducts />
+    <OmniChannel />
   </>
 );
 

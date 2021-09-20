@@ -9,6 +9,7 @@ import Loader from './shared/loader';
 const Home = lazy(() => import('./home'));
 const About = lazy(() => import('./about'));
 const VisionMission = lazy(() => import('./about/vision-mission'));
+const modusOperandi = lazy(() => import('./about/modus-operandi'));
 const mdspeech = lazy(() => import('./about/md-speech'));
 const Business = lazy(() => import('./business'));
 const ourResponsibility = lazy(() => import('./our-responsibility'));
@@ -22,6 +23,7 @@ const Routes = () => (
       <Route exact path="/home" component={Home} />
       <Route exact path="/about-bwaap" component={About} />
       <Route exact path="/vision-mission" component={VisionMission} />
+      <Route exact path="/modus-operandi" component={modusOperandi} />
       <Route exact path="/md-speech" component={mdspeech} />
       <Route exact path="/business" component={Business} />
       <Route exact path="/farms-and-products" component={Farmsproducts} />

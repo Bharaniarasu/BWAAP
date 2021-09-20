@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { Row, Col, Button } from "antd";
 
-import businessIcon from "../assets/images/why.jpg";
+import businessIcon from "../assets/images/busines.png";
 
 const Business = () => {
   return (
@@ -11,7 +11,6 @@ const Business = () => {
         span={16}
         data-aos="fade-up"
         data-aos-duration="1000"
-        style={{ padding: "0 2em" }}
       >
         <h2>Business</h2>
         <p>
@@ -28,8 +27,8 @@ const Business = () => {
         </p>
         <Button className="bwaap-btn-primary">Click Here</Button>
       </Col>
-      <Col span={8} data-aos="fade-up" data-aos-duration="1000">
-        <img src={businessIcon} width="100%" alt="bwaap" className="da" />
+      <Col span={7} offset={1} data-aos="fade-up" data-aos-duration="1000" className="img-an">
+        <img src={businessIcon} width="100%" alt="bwaap" />
       </Col>
     </Row>
   );

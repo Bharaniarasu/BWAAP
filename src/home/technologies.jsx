@@ -2,11 +2,15 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { Row, Col, Button } from "antd";
 
+import businessIcon from "../assets/images/busines.png";
+
 const Technologies = (props) => {
   return (
-    <Row className="p-2 technology-bwaap">
-      <Col span={18} offset={3} data-aos="fade-up" data-aos-duration="2000">
-        <div className="about-content bwaap-title-common " align="center">
+    <Row className="p-2">
+      <Col span={7} data-aos="fade-up" data-aos-duration="1000" className="img-an">
+        <img src={businessIcon} width="100%" alt="bwaap" />
+      </Col>
+      <Col span={16} offset={1} data-aos="fade-up" data-aos-duration="3000">
           <h2>Technologies</h2>
           <p>
             BWAAP Farms & Plantations will harness the potential of Smart
@@ -24,7 +28,6 @@ const Technologies = (props) => {
             address current & future challenges of agriculture industry.
           </p>
           <Button className="bwaap-btn-primary">Click Here</Button>
-        </div>
       </Col>
     </Row>
   );

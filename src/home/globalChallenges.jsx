@@ -4,19 +4,16 @@ import { Row, Col, Button } from "antd";
 
 const GlobalChallenges = (props) => {
   return (
-    <Row className="bwaap-global test">
-      <div className="bwaap-global-overlay"></div>
+    <Row className="bwaap-global p-2">
       <Col
-        span={18}
+        span={24}
         align="center"
-        offset="3"
         data-aos="fade-up"
         data-aos-duration="3000"
-        className="p-2"
+        className="bwaap-global-text"
       >
-        <div className="bwaap-title-common section">
           <h2>Global Challenges</h2>
-          <p>
+          <p style={{ textAlign: 'justify' }}>
             BWAAP has a larger vision of addressing Global challenges such as
             Growing food Demand, Expanding Food Insecurity, Costlier Calories,
             Water Scarcity, Rising Resource Costs, Land Degradation, Alarming
@@ -27,7 +24,6 @@ const GlobalChallenges = (props) => {
             commercial afforestation, etc.,
           </p>
           <Button className="bwaap-btn-secondary">Click Here</Button>
-        </div>
       </Col>
     </Row>
   );
